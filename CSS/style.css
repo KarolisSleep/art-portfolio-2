@@ -1,0 +1,14 @@
+body {
+    background: black;
+}
+
+.container {
+    display: flex;
+}
+
+.box {
+    background: darkblue;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
