@@ -1,9 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     background: black;
 }
 
 .container {
-    display: flex;
+    background: rgb(21, 0, 60);    
+    height: 100vh;
 }
 
 .section {
@@ -24,4 +31,10 @@ body {
 
 img {
     width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
