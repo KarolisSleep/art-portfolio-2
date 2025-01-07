@@ -42,3 +42,37 @@ img {
     width: 100%;
     height: auto;
 }
+
+.dimmed-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; /* Indicate that it's clickable */
+    overflow: hidden;
+
+    position: relative; /* Ensure the box shadow is positioned correctly */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.dimmed-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image fills the area without distortion */
+    filter: brightness(50%); /* Dim the image */
+    transition: filter 0.3s ease; /* Smooth effect on hover */
+}
+
+.dimmed-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Make the text pop */
+    margin: 0;
+    text-align: center;
+}
+
+.dimmed-image.hidden {
+    display: none; /* Hide the dimmed image when it's not needed */
+}
