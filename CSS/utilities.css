@@ -1,6 +1,7 @@
-.visible {
-    display: block;
-}
+.visibleAndCenter {
+    display: flex; /* Ensure the box is also using flex */
+    justify-content: center; /* Horizontally center content inside box */
+    align-items: center; /* Vertically center content inside box */}
 
 .hidden {
     display: none;

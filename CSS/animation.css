@@ -1,0 +1,29 @@
+.box.resize {
+    animation: expandbox 0.5s ease-in-out forwards;
+}
+
+.section.resize {
+    animation: expandsection 0.5s ease-in-out forwards;
+}
+  
+  @keyframes expandbox {
+    from {
+      width: 100px;
+      height: 100px;
+    }
+    to {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @keyframes expandsection {
+    from {
+        height: 300px;
+      width: 300px;
+    }
+    to {
+        height: 600px;
+        width: 80%;
+    }
+  }

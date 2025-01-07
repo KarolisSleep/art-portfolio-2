@@ -6,9 +6,12 @@ document.querySelectorAll('.section').forEach(section =>
                 otherSection.classList.toggle('hidden');
             }
         });
-        // Toggle the .visible class for the boxes in the clicked section
-        section.querySelectorAll('.box').forEach(box =>
-            box.classList.toggle('visible')
-        );
+        // Toggle the .visible and .resize classes for the boxes in the clicked section
+        section.querySelectorAll('.box').forEach(box => {
+            box.classList.toggle('visibleAndCenter');
+            box.classList.toggle('resize');
+        });
+        // Toggle the .resize class for the section itself
+        section.classList.toggle('resize');
     })
 );
